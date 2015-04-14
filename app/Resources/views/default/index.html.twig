@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block javascripts %}
+{% javascripts '../app/Resources/public/js/*/{locale}.js' vars=['locale'] %}
+    <script src="{{ asset_url }}"></script>
+{% endjavascripts %}
+{% endblock javascripts %}
+
+{% block body %}
+    Homepage.
+{% endblock %}
